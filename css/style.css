@@ -1,0 +1,164 @@
+#pricing {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    height: 300px;
+
+}
+
+#header-img {
+    float: left;
+    margin-left: 100px;
+}
+
+#nav-bar {
+    float: right;
+    margin-right: 40px;
+}
+
+#nav-bar ul li{
+    display: inline;
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+#main {
+    clear: both;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 0;
+}
+
+#email {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(0, 255, 0, 0.6);
+    font-weight: bold;
+    border: 0px;
+}
+
+#submit:hover {
+    background-color: rgba(79, 248, 79, 0.6);
+}
+
+#features {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    grid-gap: 40px 30px;
+}
+
+.feature-types {
+    text-align: justify;
+}
+
+.feature-icon {
+    text-align: right;
+}
+
+#features p {
+    margin: 0;
+    padding: 0;
+}
+
+#features h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-div {
+    border: 1px solid black;
+    flex-basis: 30%;
+    padding-bottom: 20px;
+}
+
+#pricing h2 {
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 8px;
+    margin: 0;
+    font-weight: 200
+}
+
+#pricing h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#pricing button {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(0, 255, 0, 0.6);
+    font-weight: bold;
+    border: 0px;
+    width: 60%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+footer li{
+    text-decoration: none;
+    display: inline;
+    margin-right: 50px;
+}
+
+footer li a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    #pricing {
+        display: flex;
+    }
+
+    .pricing-div {
+        margin-top: 30px;
+        flex-basis: 90%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #header-img {
+        float: none;
+    }
+
+    #nav-bar {
+        float: none;
+    }
+}
